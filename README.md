@@ -1,5 +1,7 @@
 # peregrine
 
+![peregrine logo](https://github.com/codecando-x/peregrine/blob/main/peregrine.png)
+
 Call a MySQL Stored Procedure and cache in Redis via an Apache Module.
 
 Ubuntu Requirements:
