@@ -129,7 +129,7 @@ static int peregrine_handler(request_rec *r) {
 
 			char storedProcedureName[261];
 
-			sprintf(storedProcedureName, "CALL %s", action);
+			sprintf(storedProcedureName, "CALL sp_%s", action);
 
 			if (mysql_query(mysql_connection, storedProcedureName)) {
 				return log_error(NULL, &redis_context, &mysql_connection,
