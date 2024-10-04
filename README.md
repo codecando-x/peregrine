@@ -23,13 +23,13 @@ Add the following to a virtual host config:
 		
 Add these configs to the apache2.conf file
 
-		PeregrineValidationRegex "^[a-zA-Z0-9-]+$"
-		PeregrineParamName "sp"
-		PeregrineCacheSockPath "/var/run/redis/redis-server.sock"
-		PeregrineDatabaseUsername "peregrineuser"
-		PeregrineDatabasePassword "peregrinepass"
-		PeregrineDatabaseName "peregrine"
-		PeregrineDatabaseSocket "/var/run/mysqld/mysqld.sock"
+		peregrineValidationRegex "^[a-zA-Z0-9-]+$"
+		peregrineParamName "sp"
+		peregrineCacheSocket "/var/run/redis/redis-server.sock"
+		peregrineDatabaseUsername "peregrineuser"
+		peregrineDatabasePassword "peregrinepass"
+		peregrineDatabaseName "peregrine"
+		peregrineDatabaseSocket "/var/run/mysqld/mysqld.sock"
 
 Enable the config, enable the mod, restart and test:
 		
