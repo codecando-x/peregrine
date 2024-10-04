@@ -15,7 +15,7 @@ INSERT INTO colors VALUES(sha2('green', 256), 'green');
 INSERT INTO colors VALUES(sha2('blue', 256), 'blue');
 
 DELIMITER ;;
-CREATE PROCEDURE `sp_colors`()
+CREATE PROCEDURE `colors`()
 BEGIN 
 	SELECT * FROM colors;
 END;;
